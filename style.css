@@ -11,24 +11,111 @@ body {
     max-width: 1310px;
 }
 
-header .d-flex {
+/*navigation*/
+/*navigation top*/
+
+.container-fluid {
+    position: relative;
+}
+
+header>.d-flex {
     position: relative;
     background-color: #f72210;
     color: #fff;
-    padding: 15px 0 15px 30px;
+    padding: 30px 0px;
     height: 96px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .logoimg {
     position: absolute;
     width: 396px;
     height: 60px;
-    vertical-align: -webkit-baseline-middle;
     transform: translate(-50%, 0);
     top: 10px;
     left: 50%;
 }
 
+.logoimg>img {
+    width: 100%;
+}
+
 header date {
     margin-left: 20px;
+    font-size: 16px;
+}
+
+#signin {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+
+#signin a {
+    text-decoration: none;
+    color: #f72210;
+    background-color: #fff;
+    padding: 8px;
+}
+
+#signin span {
+    padding-right: 10px;
+}
+
+.fa-bars {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 16px;
+    padding: 10px;
+    display: none !important;
+}
+
+/*navigation bottom*/
+
+#navflex>.p-2 {
+    font-size: 20px;
+    border-left: 1px solid #d9d9d9;
+    width: 10%;
+    text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+
+    .logoimg {
+        width: 132px;
+        height: 20px;
+        left: 100px;
+    }
+
+    .fa-bars {
+        display: block !important;
+    }
+
+    header .d-flex {
+        height: 40px;
+        padding: 3px 0px 10px;
+    }
+
+    header date {
+        display: none;
+    }
+
+    #signin {
+        font-size: 14px;
+    }
+
+    #signin a {
+        padding: 6px;
+    }
+
+    .fa-chevron-right {
+        display: none !important;
+    }
+
+    /*nav bottom*/
+    .nav-bottom {
+        display: none;
+    }
 }
