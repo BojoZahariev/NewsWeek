@@ -1,121 +1,178 @@
 body {
-    background-color: #f4f5f6;
-    color: #333;
-    font-size: 13px;
-    line-height: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+	background-color: #f4f5f6;
+	color: #333;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
 }
 
 .container {
-    max-width: 1310px;
+	max-width: 1370px;
 }
 
 /*navigation*/
 /*navigation top*/
 
 .container-fluid {
-    position: relative;
+	position: relative;
 }
 
-header>.d-flex {
-    position: relative;
-    background-color: #f72210;
-    color: #fff;
-    padding: 30px 0px;
-    height: 96px;
-    font-family: 'Roboto', sans-serif;
+header > .d-flex {
+	position: relative;
+	background-color: #f72210;
+	color: #fff;
+	padding: 50px 0px 0px 0px;
+	height: 96px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .logoimg {
-    position: absolute;
-    width: 396px;
-    height: 60px;
-    transform: translate(-50%, 0);
-    top: 10px;
-    left: 50%;
+	position: absolute;
+	width: 396px;
+	height: 60px;
+	transform: translate(-50%, 0);
+	top: 15px;
+	left: 50%;
 }
 
-.logoimg>img {
-    width: 100%;
+.logoimg > img {
+	width: 100%;
 }
 
 header date {
-    margin-left: 20px;
-    font-size: 16px;
+	margin-left: 20px;
+	font-size: 16px;
 }
 
 #signin {
-    margin-right: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    position: relative;
+	margin-right: 20px;
+	font-size: 18px;
+	font-weight: 600;
+	position: relative;
 }
 
 #signin a {
-    text-decoration: none;
-    color: #f72210;
-    background-color: #fff;
-    padding: 8px;
+	text-decoration: none;
+	color: #f72210;
+	background-color: #fff;
+	padding: 8px;
+}
+
+.fa-chevron-right {
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 #signin span {
-    padding-right: 10px;
+	padding-right: 10px;
 }
 
 .fa-bars {
-    position: absolute;
-    top: 0;
-    right: -10px;
-    width: 16px;
-    padding: 10px;
-    display: none !important;
+	position: absolute;
+	top: 0;
+	right: -10px;
+	width: 16px;
+	padding: 10px;
+	display: none !important;
 }
 
 /*navigation bottom*/
 
-#navflex>.p-2 {
-    font-size: 20px;
-    border-left: 1px solid #d9d9d9;
-    width: 10%;
-    text-align: center;
+.header-bottom {
+	color: #000;
+	height: 50px;
+	padding: 10px 0px;
+	background-color: #fff;
+	border-bottom: 1px solid #d9d9d9;
+	position: relative;
+}
+
+.header-bottom::before {
+	width: 66px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	content: "";
+	display: block;
+	background-color: #f72210;
+	border-left: 12px solid #fff;
+	border-top: 13px solid #f72210;
+}
+
+.page-nav {
+	display: flex;
+	font-size: 21px;
+	line-height: 24px;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+	list-style: none;
+	margin: 0px;
+	padding: 0px 54px 0px 0px;
+}
+
+.page-nav li {
+	flex-grow: 1;
+	text-align: center;
+	border-left: 1px solid #d9d9d9;
+}
+
+.page-nav li a {
+	cursor: pointer;
+}
+
+.page-nav :first-child,
+.page-nav :last-child {
+	border-width: 0px;
+}
+
+#search {
+	color: #0000008c;
+	cursor: text;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.fa-search {
+	padding-left: 10px;
+	font-weight: 400;
 }
 
 @media screen and (max-width: 991px) {
+	.logoimg {
+		width: 132px;
+		height: 20px;
+		left: 100px;
+	}
 
-    .logoimg {
-        width: 132px;
-        height: 20px;
-        left: 100px;
-    }
+	.fa-bars {
+		display: block !important;
+	}
 
-    .fa-bars {
-        display: block !important;
-    }
+	header .d-flex {
+		height: 40px;
+		padding: 3px 0px 10px;
+	}
 
-    header .d-flex {
-        height: 40px;
-        padding: 3px 0px 10px;
-    }
+	header date {
+		display: none;
+	}
 
-    header date {
-        display: none;
-    }
+	#signin {
+		font-size: 14px;
+	}
 
-    #signin {
-        font-size: 14px;
-    }
+	#signin a {
+		padding: 6px;
+	}
 
-    #signin a {
-        padding: 6px;
-    }
+	.fa-chevron-right {
+		display: none !important;
+	}
 
-    .fa-chevron-right {
-        display: none !important;
-    }
-
-    /*nav bottom*/
-    .nav-bottom {
-        display: none;
-    }
+	/*nav bottom*/
+	.header-bottom {
+		display: none;
+	}
 }
