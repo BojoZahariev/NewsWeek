@@ -3,12 +3,12 @@ body {
 	color: #333;
 	font-size: 13px;
 	line-height: 18px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
 }
 
 .container {
-	max-width: 1340px;
+	max-width: 1350px;
 }
 
 /*navigation*/
@@ -147,9 +147,9 @@ header date {
 
 .main {
 	background-color: #fff;
-	height: 800px;
 }
 
+/*col 1 */
 .block-title {
 	color: #03030366;
 	font-weight: bold;
@@ -172,6 +172,7 @@ article {
 
 img {
 	position: relative;
+	width: 100%;
 }
 
 .pic-on {
@@ -196,7 +197,7 @@ h3 {
 .summary {
 	font-size: 15px;
 	font-family: Arial, Helvetica, sans-serif;
-	padding: 10px 0px;
+	padding: 0px 0px 10px;
 }
 
 .related {
@@ -209,11 +210,58 @@ h3 {
 	color: #000;
 }
 
+/*Col 2*/
+
+#more-stories-part {
+	padding-top: 14px;
+	padding-bottom: 10px;
+	border-top: 1px solid #ddd;
+}
+
+#image {
+	float: left;
+	width: 135px;
+	margin-right: 15px;
+	clear: right;
+}
+
+h6 {
+	color: #000;
+	font-weight: 700;
+}
+
+/*Col 3*/
+
+#right-col {
+	margin-left: -20px;
+}
+
+#opinion {
+	border-bottom: 1px solid #ddd;
+}
+
+.headshot {
+	height: 63px;
+	max-width: 63px;
+}
+
+.info {
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+}
+
+.byline {
+	color: #555555;
+}
+
 @media screen and (max-width: 991px) {
 	.logoimg {
 		width: 132px;
 		height: 20px;
 		left: 100px;
+		top: 10px;
 	}
 
 	.fa-bars {
@@ -244,5 +292,10 @@ h3 {
 	/*nav bottom*/
 	.header-bottom {
 		display: none;
+	}
+
+	/*main*/
+	#right-col {
+		margin: auto;
 	}
 }
