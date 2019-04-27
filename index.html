@@ -13,42 +13,44 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="d-flex justify-content-between">
-                <div class="p-2">
-                    <date>Thu, Apr 25, 2019</date>
-                </div>
-                <div class="p-2" id="signin">
-                    <span>SIGN IN</span><a href="#">SUBSCRIBE <i class="fas fa-chevron-right"></i></a>
-                    <i class="fas fa-bars"></i>
-                </div>
+
+
+    <header class="header">
+        <div class="d-flex justify-content-between" id="navscroll">
+            <div class="p-2">
+                <date>Thu, Apr 25, 2019</date>
             </div>
+            <div class="p-2" id="signin">
+                <span>SIGN IN</span><a href="#">SUBSCRIBE <i class="fas fa-chevron-right"></i></a>
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
 
-            <div class="logoimg"><img src="images/newsweek-logo.png"></div>
+        <div class="logoimg"><img src="images/newsweek-logo.png"></div>
 
-            <nav class="header-bottom">
-                <ul class="page-nav">
-                    <li><a>U.S.</a></li>
-                    <li><a>World</a></li>
-                    <li><a>Bisiness</a></li>
-                    <li><a>Tech & Science</a></li>
-                    <li><a>Culture</a></li>
-                    <li><a>Sports</a></li>
-                    <li><a>Health</a></li>
-                    <li><a>Opinion</a></li>
-                    <li><a>Ndelible</a></li>
-                    <li><a id="search">Search</a><i class="fas fa-search"></i></li>
-                </ul>
-            </nav>
-        </header>
+        <nav class="header-bottom" id="navbottom">
+            <ul class="page-nav">
+                <li><a>U.S.</a></li>
+                <li><a>World</a></li>
+                <li><a>Bisiness</a></li>
+                <li><a>Tech & Science</a></li>
+                <li><a>Culture</a></li>
+                <li><a>Sports</a></li>
+                <li><a>Health</a></li>
+                <li><a>Opinion</a></li>
+                <li><a>Ndelible</a></li>
+                <li><a id="search">Search</a><i class="fas fa-search"></i></li>
+            </ul>
+        </nav>
+    </header>
 
 
 
-        <div class="main container-fluid">
-            <div class="row">
+    <div class="content">
+        <div class="featured">
+            <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="container-fluid">
+                    <div class="featured">
                         <div class="row flex-wrap-reverse">
                             <div class="col-md-5">
                                 <div class="featured">
@@ -57,8 +59,10 @@
                                         <div class="wrap">
                                             <a><img src="images/negombo-sri-lanka.jpg" class="img-fluid" alt="Responsive image"><span class="pic-on">WORLD</span></a>
                                         </div>
-                                        <h3>Sri Lanka Muslims Attacked, Forced From Homes</h3>
-                                        <div class="summary"> Hundreds of Muslim refugees have been forced to flee Sri Lanka’s west coast following reprisals.</div>
+                                        <div class="article-info">
+                                            <h3>Sri Lanka Muslims Attacked, Forced From Homes</h3>
+                                            <div class="summary"> Hundreds of Muslim refugees have been forced to flee Sri Lanka’s west coast following reprisals.</div>
+                                        </div>
                                         <div class="related">
                                             Church Attacks Are Opposite of Islam's True Teachings
                                         </div>
@@ -68,8 +72,10 @@
                                         <div class="wrap">
                                             <a><img src="images/gettyimages-1136201085.jpg" class="img-fluid" alt="Responsive image"><span class="pic-on">U.S.</span></a>
                                         </div>
-                                        <h3>Lindsey Graham in 1998: Ignoring Subpoenas Impeachable</h3>
-                                        <div class="summary">Watch: Trump Ally Lindsey Graham Once Said a President Not Complying With Congressional Oversight Was an Impeachable Offense</div>
+                                        <div class="article-info">
+                                            <h3>Lindsey Graham in 1998: Ignoring Subpoenas Impeachable</h3>
+                                            <div class="summary">Watch: Trump Ally Lindsey Graham Once Said a President Not Complying With Congressional Oversight Was an Impeachable Offense</div>
+                                        </div>
                                         <div class="related">
                                             Letter to Congress, Trump: Make Colleges Protect Speech
                                         </div>
@@ -79,8 +85,10 @@
                                         <div class="wrap">
                                             <a><img src="images/mick-mulvaney.jpg" class="img-fluid" alt="Responsive image"><span class="pic-on">U.S.</span></a>
                                         </div>
-                                        <h3>Former Deficit Hawk Mick Mulvaney Defends Growing Debt</h3>
-                                        <div class="summary">The Trump administration, he said, is “spending a bunch of money on stuff we’re not supposed to.”</div>
+                                        <div class="article-info">
+                                            <h3>Former Deficit Hawk Mick Mulvaney Defends Growing Debt</h3>
+                                            <div class="summary">The Trump administration, he said, is “spending a bunch of money on stuff we’re not supposed to.”</div>
+                                        </div>
                                         <div class="related">
                                             Top Republicans: Democrats Will 'Never' See Trump Taxes
                                         </div>
@@ -90,8 +98,10 @@
                                         <div class="wrap">
                                             <a><img src="images/joe-biden-outraises-democratic-opponents.jpg" class="img-fluid" alt="Responsive image"><span class="pic-on">U.S.</span></a>
                                         </div>
-                                        <h3>Biden Raises $6.3 Million but Sanders Has More Donors</h3>
-                                        <div class="summary">The former vice president’s ability to launch his candidacy with such a large fundraising amount will be a big advantage as he tries to hold his polling lead over 19 opponents.</div>
+                                        <div class="article-info">
+                                            <h3>Biden Raises $6.3 Million but Sanders Has More Donors</h3>
+                                            <div class="summary">The former vice president’s ability to launch his candidacy with such a large fundraising amount will be a big advantage as he tries to hold his polling lead over 19 opponents.</div>
+                                        </div>
                                         <div class="related">
                                             Biden Says He’s Different Than Obama but No Specifics
                                         </div>
@@ -101,8 +111,10 @@
                                         <div class="wrap">
                                             <a><img src="images/gettyimages-1133267016_0.jpg" class="img-fluid" alt="Responsive image"><span class="pic-on">WORLD</span></a>
                                         </div>
-                                        <h3>U.S. to Leave Arms Treaty It Wasn’t Following Anyway</h3>
-                                        <div class="summary">President Donald Trump was set to leave the Arms Trade Treaty, but the U.S. has reportedly acted above international law for years in murky weapons sales around the world.</div>
+                                        <div class="article-info">
+                                            <h3>U.S. to Leave Arms Treaty It Wasn’t Following Anyway</h3>
+                                            <div class="summary">President Donald Trump was set to leave the Arms Trade Treaty, but the U.S. has reportedly acted above international law for years in murky weapons sales around the world.</div>
+                                        </div>
                                         <div class="related">
                                             U.S. Blames Russia, China for Space Weapons
                                         </div>
@@ -112,10 +124,9 @@
                                         <div class="wrap">
                                             <a><img src="images/image_01_fullscreen.8a9dcafb.jpg" class="img-fluid" alt="Responsive image"><span class="pic-on">SPONSORED INSIGHT</span></a>
                                         </div>
-                                        <h3>ZENITH'S DEFY INVENTOR IS REVOLUTIONIZING MECHANICAL WATCHMAKING</h3>
-                                        <div class="summary">The new Zenith Defy Inventor showcases the groundbreaking Zenith Oscillator control system, which replaces the traditional sprung balance that’s been the standard for over three centuries.</div>
-                                        <div class="related">
-
+                                        <div class="article-info" id="sponsored">
+                                            <h3>ZENITH'S DEFY INVENTOR IS REVOLUTIONIZING MECHANICAL WATCHMAKING</h3>
+                                            <div class="summary">The new Zenith Defy Inventor showcases the groundbreaking Zenith Oscillator control system, which replaces the traditional sprung balance that’s been the standard for over three centuries.</div>
                                         </div>
                                     </article>
 
@@ -123,9 +134,10 @@
                                         <div class="wrap">
                                             <a><img src="images/tjhprofilenewsweek.jpg" class="img-fluid" alt="Responsive image"><span class="pic-on">SPONSORED INSIGHT</span></a>
                                         </div>
-                                        <h3>Law Firms: Fighting for a Noble Cause</h3>
-                                        <div class="summary">Attorneys are an essential component of modern American society. But who leads the field?</div>
-
+                                        <div class="article-info" id="sponsored">
+                                            <h3>Law Firms: Fighting for a Noble Cause</h3>
+                                            <div class="summary">Attorneys are an essential component of modern American society. But who leads the field?</div>
+                                        </div>
                                     </article>
 
                                 </div>
@@ -201,7 +213,7 @@
                 </div>
 
                 <div class="col-lg-4" id="right-col">
-                    <div class="container-fluid">
+                    <div class="featured">
                         <div class="block-title">OPINION</div>
 
                         <div class="wrap" id="opinion">
@@ -265,19 +277,120 @@
                         </div>
                     </div>
 
+                    <div class="featured">
+                        <div class="block-title">LATEST NEWS</div>
+                        <div class="clearfix" id="more-stories-part">
+                            <div id="image"><img src="images/gettyimages-849349802.jpg" class="img-fluid"></div>
+                            <h6>Prime Rib Day: Celebrate At These Top Restaurants</h6>
+
+                        </div>
+
+                        <div class="clearfix" id="more-stories-part">
+                            <div id="image"><img src="images/dk-metcalf.jpg" class="img-fluid"></div>
+                            <h6>Is WR DK Metcalf's body fat really 1.9 percent?</h6>
+
+                        </div>
+
+                        <div class="clearfix" id="more-stories-part">
+                            <div id="image"><img src="images/hot-dog.jpg" class="img-fluid"></div>
+                            <h6>NYC's Mayor Definitely Didn't Just Ban Hot Dogs</h6>
+
+                        </div>
+
+                        <div class="clearfix" id="more-stories-part">
+                            <div id="image"><img src="images/measles-vaccination.jpg" class="img-fluid"></div>
+                            <h6>Hundreds Quarantined For Exposure To Measles In CA</h6>
+
+                        </div>
+
+                        <div class="clearfix" id="more-stories-part">
+                            <div id="image"><img src="images/kids-ii-recall.png" class="img-fluid"></div>
+                            <h6>700K More Baby Rockers Recalled After Infant Deaths</h6>
+
+                        </div>
+
+                        <div class="clearfix" id="more-stories-part">
+                            <div id="image"><img src="images/mississippi-state-flag.jpg" class="img-fluid"></div>
+                            <h6>Mississippi Flag Banned From New Jersey Park Tradition</h6>
+
+                        </div>
+
+                        <div class="clearfix" id="more-stories-part">
+                            <div id="image"><img src="images/23-thor-dark-world-loki.jpg" class="img-fluid"></div>
+                            <h6>Is Loki Alive In 'Avengers: Endgame?'</h6>
+
+                        </div>
+
+                        <div class="clearfix" id="more-stories-part">
+                            <div id="image"><img src="images/gettyimages-1131470712.jpg" class="img-fluid"></div>
+                            <h6>Sex Workers Livid About Arrests Linked to Kraft Probe</h6>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="featured">
+                        <div class="block-title"></div>
+                        <article class="sponsored-article">
+                            <div class="wrap">
+                                <a><img src="images/nwtolkien_300x250.jpg" class="img-fluid" alt="Responsive image"><span class="pic-on">SPECIAL EDITION</span></a>
+                            </div>
+                            <div class="article-info" id="sponsored">
+                                <h3>J.R.R. Tolkien: Inside the Mastermind of Middle-Earth</h3>
+                                <div class="summary">Nearly a century ago, J.R.R. Tolkien introduced readers to the world of Middle-Earth, capturing the hearts and minds of generations to come. Explore the man behind The Hobbit and The Lord of the Rings in this new Special Edition: J.R.R.
+                                    Tolkien!
+                                </div>
+                            </div>
+                        </article>
+
+                        <div class="block">
+                            <div class="d-flex align-items-center" id="add">
+                                <span class="p-2 align-self-center" id="icon-n"></span>
+                                <span class="p-2" id="block-text">Sign up for our Newsletter</span>
+                            </div>
+
+                            <span class="signup">SIGN UP <i class="fas fa-chevron-right"></i></span>
+                            <p class="update">Update your preferences »</p>
+                        </div>
+
+                        <article class="sponsored-article">
+                            <div class="wrap">
+                                <a><img src="images/c75t9359.jpg" class="img-fluid" alt="Responsive image"><span class="pic-on">SPONSORED INSIGHT</span></a>
+                            </div>
+                            <div class="article-info" id="sponsored">
+                                <h3>GLOBAL EDUCATION 2019</h3>
+                                <div class="summary">‘One size fits all’ teaching is a thing of the past. The nurturing of critical thinking is paramount in today’s global student. Where are the leaders of tomorrow studying?
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
                 </div>
             </div>
         </div>
 
 
+        <section class="bottom">
+            <div class="magazine">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="wrap">
+                            <a><img src="images/17190426-0503cover1800x2400.jpg" class="img-fluid" alt="Responsive image"><span class="pic-on">MAY 03 ISSUE</span></a>
+                        </div>
+                        <p class="gray">See All Features</p>
+                    </div>
+
+                    <div class="col-md-9"></div>
+
+                </div>
+            </div>
+        </section>
 
 
 
     </div>
-
-
-    </div>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
