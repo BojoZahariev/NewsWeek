@@ -358,6 +358,7 @@ h6 {
 }
 
 .image-article {
+	position: relative;
 	background-color: #000;
 	background-position: center;
 	background-size: cover;
@@ -377,7 +378,22 @@ h6 {
 	background-image: url(images/affirmative-action-college-admissions-scandal-statistics.jpg);
 }
 
+#image-article4 {
+	background-image: url(images/fewhiteidentity01619475022.jpg);
+}
 
+#image-article5 {
+	background-image: url(images/doug-jones.jpg);
+}
+
+#image-article6 {
+	background-image: url(images/feblockchain-impact-awardssimply-vital-health1062184620.jpg);
+}
+
+#image-article7 {
+	background-image: url(images/infocus041135495345.jpg);
+	height: 17vw;
+}
 
 .category {
 	font: bold 16px/26px "Roboto", sans-serif;
@@ -403,6 +419,17 @@ h6 {
 	font-size: 20px;
 	color: #000;
 	font-weight: 700;
+}
+
+#marathon {
+	position: absolute;
+	bottom: 0;
+	padding: 3px 7px;
+	background-color: #f72210;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 @media screen and (max-width: 991px) {
@@ -457,6 +484,10 @@ h6 {
 	}
 
 	.image-article {
-		height: 40vw;
+		height: 52vw;
+	}
+
+	#image-article7 {
+		height: 52vw;
 	}
 }
