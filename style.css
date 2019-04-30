@@ -7,6 +7,11 @@ body {
 	overflow-x: hidden;
 }
 
+.affix {
+	top: 0;
+	width: 100%;
+}
+
 .content {
 	max-width: 1310px;
 	margin: auto;
@@ -32,7 +37,6 @@ header {
 	color: #fff;
 	padding: 50px 0px 0px 0px;
 	height: 96px;
-	font-family: 'Roboto', sans-serif;
 }
 
 .logoimg {
@@ -44,7 +48,7 @@ header {
 	left: 50%;
 }
 
-.logoimg > img {
+.logoimg>img {
 	width: 100%;
 }
 
@@ -113,7 +117,6 @@ header date {
 	font-size: 21px;
 	line-height: 24px;
 	font-weight: 700;
-	font-family: 'Roboto', sans-serif;
 	list-style: none;
 	margin: 0px;
 	padding: 0px 54px 0px 0px;
@@ -125,11 +128,11 @@ header date {
 	border-left: 1px solid #d9d9d9;
 }
 
-.page-nav > li > a {
+.page-nav>li>a {
 	cursor: pointer;
 }
 
-.page-nav > li > a:hover {
+.page-nav>li>a:hover {
 	color: #f72210 !important;
 }
 
@@ -164,7 +167,6 @@ header date {
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 16px;
-	font-family: 'Roboto', sans-serif;
 	padding-bottom: 11px;
 	padding-top: 20px;
 }
@@ -196,7 +198,6 @@ img {
 }
 
 h3 {
-	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 22px;
 	color: #000;
@@ -212,7 +213,6 @@ h3 {
 	padding: 10px 0px;
 	border-top: 1px solid #d9d9d9;
 	border-bottom: 1px solid #d9d9d9;
-	font-family: 'Roboto', sans-serif;
 	font-size: 17px;
 	font-weight: 700;
 	color: #000;
@@ -254,7 +254,6 @@ h6 {
 	color: #000;
 	font-size: 16px;
 	font-weight: 700;
-	font-family: 'Roboto', sans-serif;
 }
 
 .byline {
@@ -290,17 +289,15 @@ h6 {
 	font: bold 15px/15px "Roboto", sans-serif;
 }
 
-#icon-n {
+.icon-n {
 	display: block;
-	width: 29px;
+	max-width: 29px;
 	height: 28px;
-	background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg) center/contain
-		no-repeat #f72210;
+	background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg) center/contain no-repeat #f72210;
 	margin-right: 10px;
 }
 
 #block-text {
-	font-family: "Roboto", sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -344,8 +341,68 @@ h6 {
 	width: 8px;
 	height: 14px;
 	margin-left: 10px;
-	background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/icon-arrow-right-black.svg)
-		center/contain no-repeat;
+	background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/icon-arrow-right-black.svg) center/contain no-repeat;
+}
+
+.part-title {
+	font-size: 19px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	padding-top: 5px;
+}
+
+.title-border {
+	border-bottom: 1px solid #d9d9d9;
+	margin-bottom: 20px;
+}
+
+.image-article {
+	background-color: #000;
+	background-position: center;
+	background-size: cover;
+	height: 15vw;
+	overflow: hidden;
+}
+
+#image-article1 {
+	background-image: url(images/feschiff01banner.jpg);
+}
+
+#image-article2 {
+	background-image: url(images/feomar011130744964.jpg);
+}
+
+#image-article3 {
+	background-image: url(images/affirmative-action-college-admissions-scandal-statistics.jpg);
+}
+
+
+
+.category {
+	font: bold 16px/26px "Roboto", sans-serif;
+	color: #f72210;
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.magazine-article .category span:first-of-type {
+	padding: 3px 7px;
+	background-color: #f72210;
+	color: #fff;
+	margin-right: 7px;
+}
+
+.cat>a {
+	color: #f72210;
+}
+
+.article-title {
+	font-size: 20px;
+	color: #000;
+	font-weight: 700;
 }
 
 @media screen and (max-width: 991px) {
@@ -390,10 +447,16 @@ h6 {
 	#right-col {
 		margin: auto;
 	}
+
+
 }
 
 @media (max-width: 767px) and (min-width: 481px) {
 	#image {
 		width: 258px;
+	}
+
+	.image-article {
+		height: 40vw;
 	}
 }
