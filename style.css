@@ -433,6 +433,9 @@ h6 {
 	text-transform: uppercase;
 }
 
+
+
+
 @media screen and (max-width: 991px) {
 	.logoimg {
 		width: 132px;
@@ -477,6 +480,8 @@ h6 {
 	}
 
 
+
+
 }
 
 @media (max-width: 767px) and (min-width: 481px) {
@@ -491,4 +496,5 @@ h6 {
 	#image-article7 {
 		height: 52vw;
 	}
+
 }
