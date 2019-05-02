@@ -48,7 +48,7 @@ header {
 	left: 50%;
 }
 
-.logoimg>img {
+.logoimg > img {
 	width: 100%;
 }
 
@@ -128,11 +128,11 @@ header date {
 	border-left: 1px solid #d9d9d9;
 }
 
-.page-nav>li>a {
+.page-nav > li > a {
 	cursor: pointer;
 }
 
-.page-nav>li>a:hover {
+.page-nav > li > a:hover {
 	color: #f72210 !important;
 }
 
@@ -290,10 +290,12 @@ h6 {
 }
 
 .icon-n {
+	position: relative;
 	display: block;
 	max-width: 29px;
 	height: 28px;
-	background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg) center/contain no-repeat #f72210;
+	background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg) center/contain
+		no-repeat #f72210;
 	margin-right: 10px;
 }
 
@@ -341,7 +343,8 @@ h6 {
 	width: 8px;
 	height: 14px;
 	margin-left: 10px;
-	background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/icon-arrow-right-black.svg) center/contain no-repeat;
+	background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/icon-arrow-right-black.svg)
+		center/contain no-repeat;
 }
 
 .part-title {
@@ -355,7 +358,6 @@ h6 {
 .title-border {
 	border-bottom: 1px solid #d9d9d9;
 	margin: 20px auto;
-
 }
 
 .image-article {
@@ -404,7 +406,6 @@ h6 {
 	margin-bottom: 10px;
 }
 
-
 .magazine-article .category span:first-of-type {
 	padding: 3px 7px;
 	background-color: #f72210;
@@ -412,7 +413,7 @@ h6 {
 	margin-right: 7px;
 }
 
-.cat>a {
+.cat > a {
 	color: #f72210;
 }
 
@@ -433,8 +434,33 @@ h6 {
 	text-transform: uppercase;
 }
 
+#shadowN::after {
+	border-bottom: 3px solid red;
+	border-right: 3px solid red;
+	display: block;
+	content: "";
+	width: 26px;
+	height: 25px;
+	position: absolute;
+	bottom: -4px;
+	right: -4px;
+}
 
-
+.count {
+	width: 70px;
+	height: 52px;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 58px;
+	text-indent: 5px;
+	text-align: center;
+	background: url(images/icon-slideshows-nw.png) 0 0/contain no-repeat;
+	color: #e9212e;
+}
 
 @media screen and (max-width: 991px) {
 	.logoimg {
@@ -478,10 +504,6 @@ h6 {
 	#right-col {
 		margin: auto;
 	}
-
-
-
-
 }
 
 @media (max-width: 767px) and (min-width: 481px) {
@@ -496,5 +518,4 @@ h6 {
 	#image-article7 {
 		height: 52vw;
 	}
-
 }
