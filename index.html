@@ -15,34 +15,34 @@
 <body>
 
 
-    <header class="header">
-        <div class="d-flex justify-content-between" data-spy="affix" data-offset-top="0" id="navscroll">
+    <div id="stickynav">
+        <div class="d-flex justify-content-between" id="navscroll">
             <div class="p-2">
-                <date>Thu, Apr 25, 2019</date>
+                <date id="datenav">Thu, Apr 25, 2019</date>
             </div>
             <div class="p-2" id="signin">
                 <span>SIGN IN</span><a href="#">SUBSCRIBE <i class="fas fa-chevron-right"></i></a>
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" id="barsId"></i>
             </div>
+            <div class="logoimg" id="biglogoid"><img src="images/newsweek-logo.png"></div>
         </div>
+    </div>
 
-        <div class="logoimg"><img src="images/newsweek-logo.png"></div>
+    <nav class="header-bottom" id="navbottom">
+        <ul class="page-nav">
+            <li><a>U.S.</a></li>
+            <li><a>World</a></li>
+            <li><a>Bisiness</a></li>
+            <li><a>Tech & Science</a></li>
+            <li><a>Culture</a></li>
+            <li><a>Sports</a></li>
+            <li><a>Health</a></li>
+            <li><a>Opinion</a></li>
+            <li><a>Ndelible</a></li>
+            <li><a id="search">Search</a><i class="fas fa-search"></i></li>
+        </ul>
+    </nav>
 
-        <nav class="header-bottom" id="navbottom">
-            <ul class="page-nav">
-                <li><a>U.S.</a></li>
-                <li><a>World</a></li>
-                <li><a>Bisiness</a></li>
-                <li><a>Tech & Science</a></li>
-                <li><a>Culture</a></li>
-                <li><a>Sports</a></li>
-                <li><a>Health</a></li>
-                <li><a>Opinion</a></li>
-                <li><a>Ndelible</a></li>
-                <li><a id="search">Search</a><i class="fas fa-search"></i></li>
-            </ul>
-        </nav>
-    </header>
 
 
 
@@ -216,7 +216,7 @@
                     <div class="featured">
                         <div class="block-title">OPINION</div>
 
-                        <div class="wrap" id="opinion">
+                        <div class="wrap opinion">
                             <div class="row">
                                 <div class=" col-3"><img src="images/nw-columnist-brian-l.-ott.png" class="headshot" alt="Responsive image"></div>
                                 <div class="col-9">
@@ -226,7 +226,7 @@
                             </div>
                         </div>
 
-                        <div class="wrap" id="opinion">
+                        <div class="wrap opinion">
                             <div class="row">
                                 <div class="col-3"><img src="images/peter_roff.png" class="headshot" alt="Responsive image"></div>
                                 <div class="col-9">
@@ -236,7 +236,7 @@
                             </div>
                         </div>
 
-                        <div class="wrap" id="opinion">
+                        <div class="wrap opinion">
                             <div class="row">
                                 <div class="col-3"><img src="images/nw-columnist-newt-gingrich.png" class="headshot" alt="Responsive image"></div>
                                 <div class="col-9">
@@ -246,7 +246,7 @@
                             </div>
                         </div>
 
-                        <div class="wrap" id="opinion">
+                        <div class="wrap opinion">
                             <div class="row">
                                 <div class="col-3"><img src="images/nw-columnists-david-mcilwain.png" class="headshot" alt="Responsive image"></div>
                                 <div class="col-9">
@@ -256,7 +256,7 @@
                             </div>
                         </div>
 
-                        <div class="wrap" id="opinion">
+                        <div class="wrap opinion">
                             <div class="row">
                                 <div class="col-3"><img src="images/nw-columnists-maryscott-greenwood.png" class="headshot" alt="Responsive image"></div>
                                 <div class="col-9">
@@ -266,7 +266,7 @@
                             </div>
                         </div>
 
-                        <div class="wrap" id="opinion">
+                        <div class="wrap opinion" id="last-opinion">
                             <div class="row">
                                 <div class="col-3"><img src="images/nw-columnists-michael-e.-mann.png" class="headshot" alt="Responsive image"></div>
                                 <div class="col-9">
@@ -631,7 +631,7 @@
 
 
 
-    </div>
+    <script src="script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
