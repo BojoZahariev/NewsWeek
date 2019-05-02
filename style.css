@@ -7,11 +7,6 @@ body {
 	overflow-x: hidden;
 }
 
-.affix {
-	top: 0;
-	width: 100%;
-}
-
 .content {
 	max-width: 1310px;
 	margin: auto;
@@ -31,12 +26,26 @@ header {
 	margin: auto;
 }
 
+#stickynav {
+	position: sticky;
+	top: 0;
+	right: 0p;
+	left: 0;
+	z-index: 9999;
+}
+
 #navscroll {
 	position: relative;
+	margin: auto;
 	background-color: #f72210;
 	color: #fff;
-	padding: 50px 0px 0px 0px;
-	height: 96px;
+	padding: 50px 0px 10px 0px;
+	max-width: 1310px;
+}
+
+#navbottom {
+	max-width: 1310px;
+	margin: auto;
 }
 
 .logoimg {
@@ -52,7 +61,7 @@ header {
 	width: 100%;
 }
 
-header date {
+.datenav {
 	margin-left: 20px;
 	font-size: 16px;
 }
@@ -240,9 +249,10 @@ h6 {
 
 /*Col 3*/
 
-#opinion {
+.opinion {
 	border-bottom: 1px solid #ddd;
-	padding-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .headshot {
@@ -254,10 +264,17 @@ h6 {
 	color: #000;
 	font-size: 16px;
 	font-weight: 700;
+	margin-bottom: 5px;
 }
 
 .byline {
 	color: #555555;
+	padding: 0px;
+	margin: 0px;
+}
+
+#last-opinion {
+	border: none;
 }
 
 .article-info {
@@ -474,12 +491,12 @@ h6 {
 		display: block !important;
 	}
 
-	.header .d-flex {
+	#navscroll {
 		height: 40px;
 		padding: 3px 0px 10px;
 	}
 
-	header date {
+	#datenav {
 		display: none;
 	}
 
