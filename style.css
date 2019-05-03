@@ -21,19 +21,6 @@ body {
 	position: relative;
 }
 
-header {
-	max-width: 1310px;
-	margin: auto;
-}
-
-#stickynav {
-	position: sticky;
-	top: 0;
-	right: 0p;
-	left: 0;
-	z-index: 9999;
-}
-
 #navscroll {
 	position: relative;
 	margin: auto;
@@ -44,6 +31,8 @@ header {
 }
 
 #navbottom {
+	position: relative;
+	top: 95px;
 	max-width: 1310px;
 	margin: auto;
 }
@@ -71,6 +60,7 @@ header {
 	font-size: 18px;
 	font-weight: 600;
 	position: relative;
+	bottom: 10px;
 }
 
 #signin a {
@@ -164,10 +154,9 @@ header {
 }
 
 /*main container*/
-
-.main {
+.content {
+	padding-top: 100px;
 	background-color: #fff;
-	padding: 0px 30px;
 }
 
 /*col 1 */
@@ -502,6 +491,7 @@ h6 {
 
 	#signin {
 		font-size: 14px;
+		bottom: 0px;
 	}
 
 	#signin a {
