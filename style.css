@@ -46,7 +46,7 @@ body {
 	left: 50%;
 }
 
-.logoimg>img {
+.logoimg > img {
 	width: 100%;
 }
 
@@ -127,11 +127,11 @@ body {
 	border-left: 1px solid #d9d9d9;
 }
 
-.page-nav>li>a {
+.page-nav > li > a {
 	cursor: pointer;
 }
 
-.page-nav>li>a:hover {
+.page-nav > li > a:hover {
 	color: #f72210 !important;
 }
 
@@ -301,7 +301,8 @@ h6 {
 	display: block;
 	max-width: 29px;
 	height: 28px;
-	background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg) center/contain no-repeat #f72210;
+	background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg) center/contain
+		no-repeat #f72210;
 	margin-right: 10px;
 }
 
@@ -349,7 +350,8 @@ h6 {
 	width: 8px;
 	height: 14px;
 	margin-left: 10px;
-	background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/icon-arrow-right-black.svg) center/contain no-repeat;
+	background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/icon-arrow-right-black.svg)
+		center/contain no-repeat;
 }
 
 .part-title {
@@ -418,7 +420,7 @@ h6 {
 	margin-right: 7px;
 }
 
-.cat>a {
+.cat > a {
 	color: #f72210;
 }
 
@@ -500,7 +502,6 @@ h6 {
 	padding-right: 20px;
 	padding-bottom: 5px;
 	margin-bottom: 30px;
-
 }
 
 .item1,
@@ -538,8 +539,6 @@ h6 {
 	font-weight: 600;
 	width: 100%;
 	text-align: center;
-
-
 }
 
 #signin2 a {
@@ -557,16 +556,13 @@ footer {
 	border-top: 2px solid #f4f5f6;
 	background-color: #fff;
 	padding-top: 30px;
-	padding-bottom: 30px;
 }
 
 .footer-top {
-	padding-bottom: 100px;
+	padding-bottom: 20px;
 }
 
-.logo-footer>img {
-
-
+.logo-footer > img {
 	width: 236px;
 	height: 36px;
 	fill: #f72210;
@@ -581,11 +577,42 @@ footer {
 	text-align: right;
 }
 
-.media-icons>i {
+.media-icons > i {
 	vertical-align: bottom;
 	font-size: 25px;
 	color: #666;
 	padding-left: 7px;
+}
+
+.menu {
+	display: flex;
+	font-size: 14px;
+	line-height: 15px;
+	list-style: none;
+	margin: 0px;
+	color: #666;
+	padding: 0px;
+}
+
+.leaf {
+	border-right: 1px solid #d9d9d9;
+	padding-right: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.leaf:hover {
+	color: #000;
+}
+
+#right {
+	text-align: right;
+	padding: 0px;
+}
+
+.last {
+	border: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -633,7 +660,7 @@ footer {
 	}
 }
 
-@media (max-width: 767px) and (min-width: 481px) {
+@media (max-width: 767px) {
 	#image {
 		width: 258px;
 	}
