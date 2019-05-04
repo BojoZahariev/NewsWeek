@@ -28,6 +28,7 @@ body {
 	color: #fff;
 	padding: 50px 0px 10px 0px;
 	max-width: 1310px;
+	transition: all 0.1s;
 }
 
 #navbottom {
@@ -51,6 +52,7 @@ body {
 }
 
 .datenav {
+	position: relative;
 	margin-left: 20px;
 	font-size: 16px;
 }
@@ -73,6 +75,7 @@ body {
 .fa-chevron-right {
 	padding-right: 10px;
 	padding-left: 10px;
+	z-index: 9999;
 }
 
 #signin span {
@@ -85,7 +88,8 @@ body {
 	right: -10px;
 	width: 16px;
 	padding: 10px;
-	display: none !important;
+	color: #f72210;
+	z-index: 9999;
 }
 
 /*navigation bottom*/
@@ -624,12 +628,11 @@ footer {
 	}
 
 	.fa-bars {
-		display: block !important;
+		color: #fff;
 	}
 
 	#navscroll {
-		height: 40px;
-		padding: 3px 0px 10px;
+		padding: 3px 0px;
 	}
 
 	#datenav {
@@ -657,6 +660,10 @@ footer {
 	/*main*/
 	#right-col {
 		margin: auto;
+	}
+
+	.content {
+		padding-top: 40px;
 	}
 }
 
