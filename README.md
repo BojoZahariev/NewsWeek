@@ -1,2 +1,1 @@
-# NewsWeek
-PROJECT: USING BOOTSTRAP from THE ODIN PROJECT
+Using Bootstrap
